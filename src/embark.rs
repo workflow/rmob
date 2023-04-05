@@ -22,7 +22,7 @@ pub fn embark(repo_dir: &Path) -> BoxResult<()> {
 fn create_hook(hook_file: &Path) -> IoResult<()> {
     let shell_name = if cfg!(not(windows)) { "bash" } else { "sh" };
     let hook_code = format!(
-        "#!/bin/{}
+        "#!/usr/bin/env {}
 
 rmob prepare-commit-msg \"$1\"",
         shell_name
