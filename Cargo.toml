@@ -1,15 +1,14 @@
 [package]
 name = "rmob"
-version = "0.1.0"
-authors = ["Florian Peter <florian@tenx.tech>", "Eyal Kalderon <eyal.kalderon@tenx.tech"]
-edition = "2018"
+version = "1.0.0"
+edition = "2021"
 description = "Arr! Git mobbing in Rust"
 
 [dependencies]
-assert_cmd = "0.11.0"
-dirs = "1.0.5"
-git2 = "0.8.0"
-serde = "1.0.89"
-serde_json = "1.0.39"
-structopt = "0.2.15"
-tempfile = "3.0.7"
+assert_cmd = "2.0.12"
+dirs = "5.0.1"
+git2 = "0.18.0"
+serde = { version="1.0.188", features = ["derive"] }
+serde_json = "1.0.107"
+structopt = "0.3.26"
+tempfile = "3.8.0"

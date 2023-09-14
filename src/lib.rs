@@ -21,7 +21,7 @@ pub type BoxResult<T> = Result<T, Box<dyn Error>>;
 pub const HOOK_PATH: &str = ".git/hooks/prepare-commit-msg";
 
 #[derive(StructOpt, Clone, Debug)]
-#[structopt(name = "Rmob", version = "0.1.0", author = "")]
+#[structopt(name = "Rmob", version = "0.1.0")]
 struct Rmob {
     #[structopt(
         default_value = ".git-copirates",

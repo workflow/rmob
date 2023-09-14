@@ -49,5 +49,5 @@ fn write_executable(file: &Path, contents: &str) -> IoResult<()> {
         fs::OpenOptions::new().create(true).write(true).open(file)?;
     }
 
-    fs::write(&file, contents)
+    fs::write(file, contents)
 }
