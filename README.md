@@ -10,7 +10,17 @@
 
 Includes `Co-authored by` lines in commits for ye automatically when ye collaborate on code. Use when pairin' wit' a matey or mobbin' wit' yer crew.
 
-## Embark
+## Embark via Flakehub (recommended)
+1. Install from [Flakehub](https://flakehub.com/flake/workflow/rmob)
+3. Add co-pirates by running:
+    ```bash
+    rmob copirate enlist cb "Charlotte de Berry" "berrydeath@england.pir"
+    ```
+4. In your repo, `rmob embark`
+5. `rmob sail` away!
+
+
+## Embark Manually
 
 1. `git clone` this ship
 2. Install `rmob` on your machine using one of the commands below:
@@ -25,7 +35,7 @@ Includes `Co-authored by` lines in commits for ye automatically when ye collabor
 
 ---
 ```text
-Rmob 0.1.0
+Rmob 1.0.0
 Arr! Git mobbing in Rust
 
 USAGE:
